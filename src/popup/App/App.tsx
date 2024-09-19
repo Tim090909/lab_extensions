@@ -8,9 +8,9 @@ import SettingsPage from '../Pages/SettingsPage';
 const App: React.FC = () => {
 
   return (
-    <div className="h-[450px] w-[300px] bg-gray-100 mx-auto">
+    <div className="h-[450px] w-[300px] bg-slate-900 mx-auto">
       <Router>
-        <nav className="bg-blue-500 p-4 text-white">
+        <nav className="bg-slate-800 p-4 text-white rounded-b-xl">
           <ul className="flex justify-around">
             <li>
               <Link to="/">Home</Link>

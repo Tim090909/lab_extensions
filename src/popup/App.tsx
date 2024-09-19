@@ -10,7 +10,14 @@ const App: React.FC = () => {
   return (
     <div className="h-[450px] w-[300px] bg-gray-100 mx-auto">
       <Router>
-        <nav className="bg-blue-500 p-4 text-white">
+        <div className="p-4">
+          <Routes>
+            <Route path="/" Component={HomePage} />
+            <Route path="/wallet" Component={WalletPage} />
+            <Route path="/settings" Component={SettingsPage} />
+          </Routes>
+        </div>
+        <nav className="bg-blue-500 p-4 text-white pt-4">
           <ul className="flex justify-around">
             <li>
               <Link to="/">Home</Link>
@@ -23,13 +30,6 @@ const App: React.FC = () => {
             </li>
           </ul>
         </nav>
-        <div className="p-4">
-          <Routes>
-            <Route path="/" Component={HomePage} />
-            <Route path="/wallet" Component={WalletPage} />
-            <Route path="/settings" Component={SettingsPage} />
-          </Routes>
-        </div>
       </Router>
     </div>
   );
